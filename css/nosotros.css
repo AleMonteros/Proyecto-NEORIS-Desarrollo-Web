@@ -1,0 +1,167 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+header{
+    background-color: black;
+}
+
+nav{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.Logo1{
+    width: 100px;
+    height: 100px;
+}
+
+.DivNav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+.ListaNav{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 30px;
+}
+
+li{
+    margin: 30px;
+}
+
+.Productos{
+    padding: 10px;
+    border: 3px solid white;
+    border-radius: 100px;
+}
+
+.CarritoDeCompras{
+    width: 30px;
+    height: 30px;
+}
+
+.Fondo{
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+body{
+    color: white;
+    height: 800px;
+    margin: 0px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+}
+
+.DivSection{
+    margin: 50px;
+    border: 10px solid rgb(21, 21, 21);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1{
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.Parrafos{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+.Div1{
+    display: flex;
+    align-items: last baseline;
+}
+
+.Logo2{
+    width: 250px;
+    height: 250px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+}
+
+h3{
+    margin-left: 70px;
+}
+
+.Lista1{
+    list-style: none;
+}
+
+.Lista2{
+    list-style: none;
+    margin: 10px;
+}
+
+.DivNuestrasRedes{
+    display: flex;
+    flex-direction: column;
+}
+
+.NuestrasRedes{
+    margin-left: 5px;
+}
+
+.DivInstagram{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.Instagram{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.DivFacebook{
+    display: flex;
+    align-items: center;
+}
+
+.Facebook{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
