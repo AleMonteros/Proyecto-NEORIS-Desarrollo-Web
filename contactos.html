@@ -9,6 +9,8 @@
     <title>PrintiInverse - Contactos</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/normalize.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="./js/script.js"></script>
 </head>
 
 <body>
@@ -45,41 +47,41 @@
     <!-- Seccion de Contacto - Formulario -->
 
     <main class="ContenedorCont">
-
+    
         <h2 class="fw-300 CentrarTexto TituloCont">Contactos</h2>
-  
+    
         <div class="ContenidoCont">
-          <div class="InfoCont">
-
-              <p>Tienda Fisica</p>
-              <p>Direccion : Direccion Falsa 123</p>
-              <p>Telefono Falso : 1234567890</p>
-              <p>Horario : Lun a Vie de 8 a 17 hs</p>
-
-              <div class="ImagenCont">
-                <img src="./images/logo-printiinverse.png" alt="Imagen Logotipo">
-              </div>
-          </div>
-
-  
-          <div>
-              <form id="contactForm" class="contact-form custom-form-style-1">
-                  <div>
-                      <input type="text" name="" id="" class="form-name" placeholder="  Nombre">
-                  </div>
-                  <div>
-                      <input type="email" name="" id="" class="form-email" placeholder="  Email">
-                  </div>
-                  <div>
-                      <input type="text" name="" id="" class="form-mensaje" placeholder="  Mensaje">
-                  </div>
-                  <div>
-                      <input type="submit" class="button" value="Enviar">
-                  </div>
-              </form>
-          </div>
+            <div class="InfoCont">
+    
+                <p>Tienda Fisica</p>
+                <p>Direccion : Direccion Falsa 123</p>
+                <p>Telefono Falso : 1234567890</p>
+                <p>Horario : Lun a Vie de 8 a 17 hs</p>
+    
+                <div class="ImagenCont">
+                    <img src="./images/logo-printiinverse.png" alt="Imagen Logotipo">
+                </div>
+            </div>
+    
+    
+            <div>
+                <form id="myForm" class="contact-form custom-form-style-1">
+                    <div>
+                        <input type="text" name="" id="name" class="form-name" placeholder="  Nombre">
+                    </div>
+                    <div>
+                        <input type="email" name="" id="email" class="form-email" placeholder="  Email">
+                    </div>
+                    <div>
+                        <input type="text" name="" id="message" class="form-mensaje" placeholder="  Mensaje">
+                    </div>
+                    <div>
+                        <input type="submit" class="button" value="Enviar">
+                    </div>
+                </form>
+            </div>
         </div>
-      </main>
+    </main>
 
     <!-- Footer - Direcciones y Redes -->
     <footer>
@@ -106,6 +108,7 @@
             </ul>
         </div>
     </footer>
+
 
 </body>
 
