@@ -1,34 +1,46 @@
-let currentStep = 1;
-    const form = document.getElementById('wizardForm');
-    const steps = document.querySelectorAll('.step');
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('myForm');
 
-    function showStep(step) {
-        steps.forEach((s, index) => {
-            if (index + 1 === step) {
-                s.style.display = 'block';
-            } else {
-                s.style.display = 'none';
-            }
-        });
-    }
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
 
-    function nextStep() {
-        if (currentStep < steps.length) {
-            currentStep++;
-            showStep(currentStep);
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const messageInput = document.getElementById('message');
+
+        if (validateForm(nameInput, emailInput, messageInput)) {
+            generatePDF(nameInput.value, emailInput.value, messageInput.value);
+            form.submit();
         }
-    }
-
-    function prevStep() {
-        if (currentStep > 1) {
-            currentStep--;
-            showStep(currentStep);
-        }
-    }
-
-    form.addEventListener('submit', function (e) {
-        e.preventDefault();
-        alert('Formulario enviado con éxito.');
     });
 
-    showStep(currentStep);
+    function validateForm(name, email, message) {
+        if (name.value === '') {
+            alert('Por favor, ingresa tu nombre.');
+            name.focus();
+            return false;
+        }
+
+        if (email.value === '') {
+            alert('Por favor, ingresa tu Email.');
+            email.focus();
+            return false;
+        }
+
+        if (message.value === '') {
+            alert('Por favor, ingresa tu mensaje.');
+            message.focus();
+            return false;
+        }
+
+        return true;
+    }
+
+    function generatePDF(name, email, message) {
+        const doc = new jsPDF();
+        doc.text(20, 20, `Nombre: ${name}`);
+        doc.text(20, 30, `Email: ${email}`);
+        doc.text(20, 40, `Mensaje: ${message}`);
+        doc.save('formulario.pdf');
+    }
+});
