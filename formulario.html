@@ -60,34 +60,32 @@
                                 <span class="d-none d-sm-inline">Informacion Personal</span>
                             </a>
                         </li>
-                        <!-- end nav item -->
+
                         <li class="nav-item" data-target-form="#jobDetailForm">
                             <a href="#jobDetail" data-bs-toggle="tab" data-toggle="tab" class="nav-link icon-btn">
                                 <i class="bx bxs-building me-1"></i>
                                 <span class="d-none d-sm-inline">Detalles de Envio</span>
                             </a>
                         </li>
-                        <!-- end nav item -->
+
                         <li class="nav-item" data-target-form="#educationDetailForm">
                             <a href="#educationDetail" data-bs-toggle="tab" data-toggle="tab" class="nav-link icon-btn">
                                 <i class="bx bxs-book me-1"></i>
                                 <span class="d-none d-sm-inline">Detalles de Compra</span>
                             </a>
                         </li>
-                        <!-- end nav item -->
+
                         <li class="nav-item">
                             <a href="#finish" data-bs-toggle="tab" data-toggle="tab" class="nav-link icon-btn">
                                 <i class="bx bxs-check-circle me-1"></i>
                                 <span class="d-none d-sm-inline">Finalización</span>
                             </a>
                         </li>
-                        <!-- end nav item -->
+
                     </ul>
-                    <!-- nav pills -->
+
         
                     <div class="tab-content mb-0 pt-0">
-        
-                        <!-- START: Define your tab pans here -->
         
                         <div class="tab-pane show active" id="contactDetail">
                             <form id="contactForm" method="post" action="#">
@@ -125,7 +123,7 @@
         
                             </form>
                         </div>
-                        <!-- end contact detail tab pane -->
+
                         <div class="tab-pane" id="jobDetail">
                             <form id="jobForm" method="post" action="#">
                                 <h5 class="my-3">Completa los siguientes Campos para su Envio</h5>
@@ -147,7 +145,7 @@
                                 </div>
                             </form>
                         </div>
-                        <!-- end job detail tab pane -->
+
                         <div class="tab-pane" id="educationDetail">
                             <form id="educationForm" method="post" action="#">
                                 <h5 class="mb-3 mt-0">Detalles del Pago</h5>
@@ -183,7 +181,7 @@
                                 </div>
                             </form>
                         </div>
-                        <!-- end education detail tab pane -->
+
                         <div class="tab-pane" id="finish">
                             <div class="row d-flex justify-content-center">
                                 <div class="col-lg-6">
@@ -198,14 +196,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- end col -->
+
                             </div>
-                            <!-- end row -->
+
                         </div>
         
-                        <!-- END: Define your tab pans here -->
-        
-                        <!-- START: Define your controller buttons here-->
                         <div class="d-flex wizard justify-content-between mt-3">
                             <div class="first">
                                 <a href="javascript:void(0);" class="btn btn-primary">
@@ -229,21 +224,19 @@
                                     Finalizar
                                 </a>
                             </div>
-                        </div>
-        
-                        <!-- END: Define your controller buttons here-->
+                        </div>  
         
                     </div>
-                    <!-- end tab content-->
+
                 </div>
-                <!-- end basicwizard -->
-        
+
             </div>
             <div class="col-3"></div>
         </div>
         
     </main>
 
+    <!-- Footer - Direcciones y Redes -->
     <footer>
         <div>
             <h3 class="TituloFooter">Contactanos</h3>
@@ -274,11 +267,9 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     
-    <!--Import vanilla wizard here-->
     <script src="https://cdn.jsdelivr.net/npm/vanilla-wizard@0.0.5">
     </script>
     
-    <!--Initializing a wizard with no configuration -->
     <script>
         new Wizard("#basicwizard");
     </script>
